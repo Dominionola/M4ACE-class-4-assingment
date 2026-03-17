@@ -13,8 +13,16 @@ for (let i = 1; i <= 12; i++) {
   // console.log(arr[i] * 2);
 }
 
-let i = 0;
-do {
-  console.log(arr[i] * 3);
+let i = 1;
+while (i <= 12) {
+  let j = 1;
+  let rowOutput = "";
+
+  while (j <= 12) {
+    rowOutput += (i * j).toString().padStart(4, " ");
+    j++;
+  }
+
+  console.log(rowOutput);
   i++;
-} while (i < arr.length);
+}
