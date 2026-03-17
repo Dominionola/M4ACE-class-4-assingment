@@ -26,3 +26,27 @@ while (i <= 12) {
   console.log(rowOutput);
   i++;
 }
+
+// Array Methods Practice - Work with a student dataset to practice filter,
+// map, reduce, sort, some, and every methods for data transformation
+// and analysis
+
+const students = [
+  { id: 1, name: "Alice", grade: 85, subject: "Math", isActive: true },
+  { id: 2, name: "Bob", grade: 42, subject: "History", isActive: true },
+  { id: 3, name: "Charlie", grade: 92, subject: "Math", isActive: false },
+  { id: 4, name: "Diana", grade: 78, subject: "Science", isActive: true },
+  { id: 5, name: "Evan", grade: 55, subject: "History", isActive: false },
+];
+
+passingStudents = students.filter((student) => student.grade >= 60);
+console.log(passingStudents);
+
+const studentNames = students.map((students) => students.name);
+console.log(studentNames);
+
+const totalClassScore = students.reduce((accumulator, student) => {
+  return accumulator + student.grade;
+}, 0);
+
+console.log(totalClassScore);
