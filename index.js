@@ -50,3 +50,6 @@ const totalClassScore = students.reduce((accumulator, student) => {
 }, 0);
 
 console.log(totalClassScore);
+
+const sortedGrade = students.sort((a, b) => a.grade - b.grade);
+console.log(sortedGrade);
